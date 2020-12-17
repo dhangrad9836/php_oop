@@ -1,8 +1,8 @@
 <?php
-require("dependency_injection_classes/Inventory.php");
-require("dependency_injection_classes/Car.php");
-require("dependency_injection_classes/Honda.php");
-require("dependency_injection_classes/BMW.php");
+require("interfaces_classes/Inventory.php");
+require("interfaces_classes/Car.php");
+require("interfaces_classes/Honda.php");
+require("interfaces_classes/BMW.php");
 
 //Honda is car1
 //we also passed in an instance of Inventory
