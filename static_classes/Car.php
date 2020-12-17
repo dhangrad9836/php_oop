@@ -9,6 +9,19 @@ class Car{
         //so use it inside the store() method with {$this->location}
         private $location = "Northern Blvd";
 
+        //static property/variable
+        public static $city = "Queens, NY";
+        //note that you access a static variable with ::
+        //so in the index page access by Car::$city
+
+        public static $states = [
+            "NY",
+            "FL",
+            "AL",
+            "TX",
+            "Ny"
+        ];
+
 
 
 
@@ -28,6 +41,15 @@ class Car{
         echo "Sold at {$this->location} Dealership";
 
     }//end of store
+
+
+    //this is a static function/method
+    //you have to use the self::$states to access the loop for static methods
+    public static function states(){
+        foreach (self::$states as $state){
+            echo "<h1>{$state}</h1>";
+        }
+    }
 
 }//end of car
 
