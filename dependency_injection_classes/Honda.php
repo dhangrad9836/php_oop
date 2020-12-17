@@ -35,6 +35,13 @@ class Honda extends Car{
     //2 $this->inventory
     //3 $this->inventory->carTotal();
     //4 $this->inventory->carTotal($this->company)
+    //also in the carTotal() method has 2 arguments
+    //the first is the company so it will be either Honda or BMW.
+    //the public property/variable at the top will be where this is accessed then
+    //in the Inventory class will evaluate if it's Honda or BMW
+    //the second argument is the number of cars sold. By default we listed 1 in 
+    //constructor if nothing is put...here we put 3 so three cars will be 
+    //subtracted from the inventory and display the total cars left
     echo $this->inventory->carTotal($this->company, 3);
     
     }//end of price
