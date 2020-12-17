@@ -3,6 +3,8 @@
 //interfaces are rules that you give to class
 
 //we have to create the carsSold() method below
+//we pass in teh $numberOfCars inside the carSold() method which this number comes
+//from the Honda() class that has that number inside of it.
 interface InventoryInterface{
 
     public function carsSold($numberOfCars);
